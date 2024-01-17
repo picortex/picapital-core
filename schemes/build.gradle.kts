@@ -11,16 +11,10 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(libs.sentinel.registration.core)
-                api(libs.sentinel.enterprise.authentication.core)
+                api(libs.sentinel.schemes.registration.email)
+                api(libs.sentinel.schemes.enterprise.authentication.email)
                 api(libs.flame.schemes.smes)
-            }
-        }
-
-        val commonTest by getting {
-            dependencies {
-                api(libs.koncurrent.later.coroutines)
-                api(libs.kommander.coroutines)
+                api(libs.sanity.core)
             }
         }
     }

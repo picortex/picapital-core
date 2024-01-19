@@ -14,7 +14,7 @@ kotlin {
                 api(libs.sentinel.schemes.registration.email)
                 api(libs.sentinel.schemes.enterprise.authentication.email)
                 api(libs.identifier.brands)
-//                api(libs.flame.schemes.smes)
+                api(libs.flame.schemes.smes)
                 api(libs.sanity.core)
             }
         }
